@@ -1,0 +1,87 @@
+# Replastix Innovations Salesforce Project
+
+## Project Title
+RePlastix Innovations: Transforming Plastic Waste into Sustainable Solutions
+
+## Project Overview
+Replastix Innovations is a Salesforce-based capstone project developed to automate and streamline the plastic waste recycling business process. The system focuses on inventory management, order processing, stock tracking, replenishment automation, and reporting.
+
+## Business Objective
+The goal of this project is to improve operational efficiency by automating key business activities such as:
+- Plastic waste recycling management
+- Order management
+- Inventory monitoring
+- Restock request automation
+- Approval workflows
+- Email notifications
+- Reporting and analytics
+
+## Features Implemented
+
+### 1. Data Security
+- Created Roles for different users
+- Created Profiles for secure access
+- Controlled data visibility based on user responsibilities
+
+### 2. Inventory Management
+- Tracks product stock levels
+- Checks stock threshold automatically
+- Creates restock requests when stock is insufficient
+
+### 3. Order Management
+- Automatically reduces stock after order creation
+- Updates stock records based on order quantity
+
+### 4. Restock Management
+- Generates replenishment requests for low stock items
+- Approves restock requests
+- Updates stock automatically after approval
+
+### 5. Email Notification
+- Sends email notification to warehouse manager when restock request is approved
+
+### 6. Reporting
+- Supports report and dashboard creation for business analysis
+
+## Salesforce Components Used
+- Custom Objects
+- Custom Fields
+- Roles and Profiles
+- Apex Classes
+- Apex Triggers
+- Validation and Automation
+- Reports and Dashboards
+
+## Custom Objects Used
+- Re_Plastic_Innovations_Recycled_Product__c
+- Re_Plastic_Innovations_Order__c
+- Re_Plastic_Innovations_Restock_Request__c
+
+## Apex Components
+
+### Apex Classes
+- InventoryManager.cls
+- InventoryManagerTest.cls
+- EmailNotificationHelper.cls
+
+### Triggers
+- UpdateStockAfterOrder.trigger
+- UpdateStockAfterRestockApproval.trigger
+
+## Automation Logic
+1. When a new order is created:
+   - Stock is reduced automatically
+   - If stock is insufficient, a restock request is created
+
+2. When a restock request is approved:
+   - Product stock is increased automatically
+   - Email notification is sent to warehouse manager
+
+## Demo Video
+[Watch Demo Video](PASTE_YOUR_DEMO_VIDEO_LINK_HERE)
+
+## GitHub Repository
+This repository contains the complete project source code and documentation.
+
+## Developed For
+Credit Course / Salesforce Capstone Project
